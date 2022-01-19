@@ -1,0 +1,286 @@
+.container_logo{
+ 
+  width:300px;
+
+}
+
+/*_______________________________________________________________________________________________
+
+------------------------BOTAO LARANJA-------------------------------------
+__________________________________________________________________________________________________*/
+
+.logo_sign{
+
+  width: 100px;
+  margin-top: 65px;
+  margin-left: 65px;
+  transform: translate(-50%,-50%);
+
+}
+
+.rectangle_orange{
+
+  animation-name:rectangle_orange_sign ;
+  animation-duration: 10s;
+  animation-iteration-count:infinite;
+  opacity: 70%;
+  z-index: 4;
+
+}
+
+@keyframes rectangle_orange_sign{
+
+  0%   { right: 0px; top:40%;}
+  25%  { right:145px; top:55%;}
+  50% { right: 0px; top:40%;}
+  75%  { right:145px; top:20%;}
+  100% { right: 0px; top:40%;}
+
+}
+
+/*_______________________________________________________________________________________________
+
+------------------------BOTAO AMARELO-------------------------------------
+__________________________________________________________________________________________________*/
+
+.rectangle_yellow{
+ 
+  width: 140px;
+  height:100px;
+  left:15px;
+  top:110px;
+  z-index: 3;
+  
+}
+
+.button_sign_Up,.button_sign_In{
+
+  display:none;
+  width: 140px;
+  height:100px;
+  background-color: var(--yellow);
+  position: absolute;
+  left:15px;
+  top:110px;
+  z-index: 3;
+
+}
+
+
+.button_sign_Up,.button_sign_In{
+
+  box-shadow:  0 0 1em var(--white),inset 0 0 1em var(--black);
+  opacity: 60%;
+  
+}
+
+.button_sign_Up{
+
+  background-color: var(--blue);
+  animation-name: movingButtonUp;
+  animation-iteration-count: 1;
+ 
+}
+
+.button_sign_Up:hover{
+
+  background-color:var(--grey);
+  transition: 250ms;
+ 
+}
+
+
+.button_sign_In{
+
+  background-color: var(--green);
+  animation-name: movingButtonIn;
+  animation-iteration-count: 1;
+  
+}
+
+.button_sign_In:hover{
+
+  background-color:var(--grey);
+  transition: 250ms;
+ 
+}
+
+
+@keyframes movingButtonUp{
+
+  0%{
+
+    transform: translate(0, 0);
+    opacity:10%;
+   
+  }
+
+
+  100%{
+
+    transform: translate(60,-20);
+    opacity: 60%;
+   
+  }
+
+}
+
+
+@keyframes movingButtonIn{
+
+  0%{
+
+    transform: translate(0, 0);
+    opacity:10%;
+   
+  }
+
+
+  100%{
+
+    transform: translate(60,50);
+    opacity: 60%;
+   
+  }
+
+}
+
+/*_______________________________________________________________________________________________
+
+------------------------BOTAO CINZA SIGN_UP  / BOTAO CINZA SIGN_IN -------------------------------------
+__________________________________________________________________________________________________*/
+
+#t_h1_blue{
+
+  color:var(--dark_blue);
+  margin-top: 175px;
+
+}
+
+#t_h1_green{
+
+  color:var(--dark_green);
+  margin-bottom: 170px;
+  
+}
+
+.rectangle_blue,.rectangle_green{
+
+  background-color: var(--grey);
+
+}
+
+.rectangle_blue:hover{
+
+  background-color: var(--blue);
+  opacity:60%;
+
+}
+
+.rectangle_green:hover{
+
+  background-color: var(--green);
+  opacity:60%;
+
+}
+
+.box_up_L,.box_in_L{
+ 
+  display:none;
+  width:120px;
+  box-shadow: 0 0 1em var(--black);
+  border-radius: 10px;
+  position:absolute;
+  background-color: var(--grey);
+  transform-origin:(0,0);
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+    
+}
+
+.box_up_L{
+ 
+  height:240px;
+  top:35%;
+  left: 25%;
+  animation-name:box_up;
+  
+}
+
+
+.box_up_L_click{
+ 
+  background-color: var(--blue);
+  height:240px;
+  top:35%;
+  left: 25%;
+  animation-name:box_up;
+  
+}
+
+.box_in_L{
+ 
+  height:260px;
+  top: 0%;
+  left:47%;
+  animation-name:box_in;
+  
+}
+
+@keyframes box_up{
+
+  0% {transform:rotate(0deg);left:25%;top: 100px;}
+  50% {transform:rotate(90deg);left:25%;top: 100px;}
+  75% {transform:rotate(90deg);left:30%;top:100px;width: 120px;}
+  100% {transform:rotate(90deg);left:0vw;top:150px;width: 300px;height:320px;}
+  
+}
+
+@keyframes box_in{
+
+  0% {transform:rotate(0deg);left:47%; top: -100px;}
+  50% {transform:rotate(90deg);left:30%; top:-100px;}
+  75% {transform:rotate(90deg);left:30%; top:-100px;width: 120px;}
+  100% {transform:rotate(90deg);left:-7vw; top:-150px;width: 350px;height:320px;}
+  
+}
+
+.t_box_up_L,.t_box_in_L{
+
+
+  width:280px;
+  background-color: var(--transparent);
+  animation-name:t_box_geral ;
+  transform-origin:center;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+  
+}
+
+.t_box_up_L{
+
+  height:110px;
+  margin-top: 105px;
+  margin-left:5px;
+}
+
+.t_box_in_L{
+
+  height:220px;
+  margin-top:50px;
+  margin-left:5px;
+  
+}
+
+@keyframes t_box_geral{
+
+  0% {transform:rotate(0deg);opacity:0%;}
+  25%{opacity:0%;}
+  50%{opacity:0%;}
+  75%{opacity:0%;}
+  100% {transform:rotate(-90deg);opacity:100%;}
+  
+}
+
+
+

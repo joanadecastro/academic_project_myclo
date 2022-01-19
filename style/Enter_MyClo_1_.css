@@ -1,0 +1,95 @@
+
+ /*------------------------------------------------
+   RECTANGULO AZUL
+-------------------------------------------------*/
+  
+.rectangle_blue{
+
+  animation-name:rectangle_blue;
+  animation-duration: 10s;
+  animation-iteration-count:infinite;
+  
+}
+  
+  
+@keyframes rectangle_blue{
+
+  0%   {left:25%; top:35%;}
+  25%  {left:25%; top:20%;}
+  50%  {left:25%; top:35%;}
+  75%  {left:25%; top:20%;}
+  100% {left:25%; top:35%;}
+  
+}
+
+/*------------------------------------------------
+  RECTANGULO VERDE
+-------------------------------------------------*/
+  
+.rectangle_green{
+  
+  animation-name:rectangle_green ;
+  animation-duration: 10s;
+  animation-iteration-count:infinite;
+  
+}
+  
+@keyframes rectangle_green{
+  
+  0%   {left:47%; top:0%;}
+  25%  {left:47%; top:15px;}
+  50% {left:47%; top:0%;}
+  75%  {left:47%; top:15px;}
+  100% {left:47%; top:0%;}
+  
+}
+
+/*------------------------------------------------
+  RECTANGULO LARANJA
+-------------------------------------------------*/
+
+.rectangle_orange:hover{
+
+  background-color: var(--white);
+  transition: 10ms;
+  
+}
+
+/*------------------------------------------------
+  RECTANGULO AMARELO
+-------------------------------------------------*/
+
+.rectangle_yellow{
+  
+  width: 108px;
+  height:185px;
+  background-color: var(--yellow);
+  animation-name:rectangle_yellow ;
+  animation-duration: 10s;
+  animation-iteration-count:infinite;
+   
+}
+
+@keyframes rectangle_yellow{
+
+  0%   {left:0px; top:20%;}
+  25%  {left:15px; top:20%;}
+  50%  {left:0px; top:20%;}
+  75%  {left:15px; top:20%;}
+  100% {left:0px; top:20%;}
+  
+}
+
+/*------------------------------------------------
+ CRUZETA 
+-------------------------------------------------*/
+
+.cruzeta{
+
+  margin-top:105px;
+  margin-left:120px;
+  z-index: 2;
+
+}
+
+  

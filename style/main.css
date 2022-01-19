@@ -1,0 +1,563 @@
+/*! HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
+
+/* main.css 2.1.0 | MIT License | https://github.com/h5bp/main.css#readme */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+  resize: vertical;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+/*_______________________________________________________________________________________________
+
+----------------------------------------------CORES---------------------------------------------
+__________________________________________________________________________________________________*/
+
+:root{
+  
+  --white: #ffffff;
+  --black: #000000;
+  --grey:rgb(134, 134, 134);
+  --ligth_grey:rgb(199, 199, 199);
+  --dark_grey:rgb(37, 37, 37);
+  --yellow: rgb(252, 186, 4);
+  --blue: rgb(0, 153,204);
+  --dark_blue:rgb(5, 75, 99);
+  --green:rgb(51,153, 51);
+  --dark_green:rgb(25, 78, 25);
+  --orange:rgb(204, 102, 51);
+  --transparent:transparent;
+
+}
+
+/*_______________________________________________________________________________________________
+
+----------------------------------------HTML / BODY ---------------------------------------------
+__________________________________________________________________________________________________*/
+
+html{
+
+  box-sizing: border-box;
+
+}
+
+*, *:before, *:after{
+
+  box-sizing: inherit;
+
+}
+
+body{
+
+  font-family: 'Roboto', sans-serif;
+  font-size: 1em;
+  color: var(--white);
+ 
+}
+
+a{
+
+  text-decoration: none;
+
+}
+
+/*_______________________________________________________________________________________________
+
+----------------------------------------- IMAGENS -----------------------------------------------
+__________________________________________________________________________________________________*/
+
+img{
+
+  max-width: 100%;
+
+}
+
+/*_______________________________________________________________________________________________
+
+----------------------------------------- TIPOGRAFIA---------------------------------------------
+__________________________________________________________________________________________________*/
+
+/*------------------------------------------------
+  h1
+-------------------------------------------------*/
+
+.t_h1{
+
+  font-size: 0.8em;
+  text-transform: uppercase;
+  color: var(--black);
+  text-align: center;
+
+}
+
+#t_h1{
+
+  font-size: 0.7em;
+  text-transform: uppercase;
+  color: var(--black);
+  text-align: left;
+  padding-left:15px;
+
+}
+
+/*_______________________________________________________________________________________________
+
+---------------------------CONTAINER GERAL / CONTAINER SECUNDARIO/ CONTAINER LOGO--------------------------
+__________________________________________________________________________________________________*/
+
+/*------------------------------------------------
+  CONTAINER GERAL- container_L
+-------------------------------------------------*/
+
+.container_L,.container_L1{
+ 
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position:relative;
+  overflow:hidden;
+
+}
+
+.container_L{
+
+  background-image: linear-gradient(to bottom,var(--black),var( --ligth_grey));
+
+}
+
+
+/*------------------------------------------------
+  CONTAINER LOGO
+-------------------------------------------------*/
+
+.container_logo{
+ 
+  width:270px;
+  height:245px;
+  margin-bottom:15%;
+  position: relative;
+
+}
+
+
+/*------------------------------------------------
+  CONTEUDO - container_M
+-------------------------------------------------*/
+
+.container_M{
+
+  width: 80vw;
+  height: 85vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
+/*_______________________________________________________________________________________________
+
+------------------------------------ENTER MYCLO--------------------------------------------
+__________________________________________________________________________________________________*/
+
+
+/*------------------------------------------------
+  LOGOTIPO
+-------------------------------------------------*/
+
+.rectangle_yellow ,.rectangle_blue, .rectangle_green{
+
+  box-shadow:  0 0 1em var(--black);
+  position:absolute;
+
+}
+
+.rectangle_yellow{
+ 
+  background-color: var(--yellow);
+ 
+}
+
+.rectangle_blue{
+ 
+  width:120px;
+  height:240px;
+  background-color: var(--blue);
+  top:35%;
+  left: 25%;
+
+}
+
+.rectangle_green{
+  
+  width:120px;
+  height:230px;
+  background-color:var(--green);
+  top: 0%;
+  left:47%;
+
+}
+
+.orange{
+
+  position:absolute;
+  top:40%;
+  right: 0px;
+  animation-name:rectangle_orange ;
+  animation-duration: 10s;
+  animation-iteration-count:infinite;
+  z-index: 3;
+
+}
+
+.rectangle_orange{
+ 
+  width:130px;
+  height:130px;
+  background-color: var(--orange);
+  position:absolute;
+  top:0%;
+  right: 0px;
+  box-shadow:  0 0 1em var(--white),inset 0 0 1em var(--black);
+  opacity: 50%;
+
+}
+
+@keyframes rectangle_orange {
+
+  0%   { right: 0px; top:40%;}
+  25%  { right:25px; top:40%;}
+  50% { right: 0px; top:40%;}
+  75%  { right:25px; top:40%;}
+  100% { right: 0px; top:40%;}
+
+}
+
+
+
+/*------------------------------------------------
+ CRUZETA ANIMADA
+-------------------------------------------------*/
+
+.cruzeta{
+
+  width: 150px;
+  animation-name:cruzeta ;
+  transform-origin:top;
+  animation-duration: 10s; 
+  animation-iteration-count:infinite;
+ 
+}
+
+@keyframes cruzeta {
+
+  0% {transform:rotate(45deg);transform:rotate(-45deg)}
+  25% {transform:rotate(-45deg);transform:rotate(45deg)}
+  50% {transform:rotate(45deg);transform:rotate(-45deg)}
+  75% {transform:rotate(-45deg);transform:rotate(45deg)}
+  100% {transform:rotate(45deg);transform:rotate(-45deg)}
+  
+}
+
+.letter{
+
+  width:230px;
+  margin-top: 15%;
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+
+}
+
+/*_______________________________________________________________________________________________
+
+------------------------------CAIXAS DE TEXTO --------------------------------------
+__________________________________________________________________________________________________*/
+
+/*----------------------------------------------------
+  CAIXA DE TEXTO - t_box  /   CAIXA BOTÃO - b_box
+------------------------------------------------------*/
+.t_box{
+
+  width:280px;
+  height:40px;
+  margin-top: 20px;
+  box-shadow:  0 0 1em var(--black);
+  border-radius: 10px;
+  background-color: var(--white);
+  font-size: 0.7em;
+  text-transform: uppercase;
+  color: var(--black);
+  text-align: left;
+  padding-left:15px;
+ 
+}
+
+.b_box{
+
+  background-color:var(--ligth_grey);
+  margin-top:50px; ;
+
+}
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden,
+[hidden] {
+  display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  /* 1 */
+}
+
+/*
+ * Extends the .sr-only class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.sr-only.focusable:active,
+.sr-only.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  white-space: inherit;
+  width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+  visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix::before,
+.clearfix::after {
+  content: " ";
+  display: table;
+}
+
+.clearfix::after {
+  clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+  (-webkit-min-device-pixel-ratio: 1.25),
+  (min-resolution: 1.25dppx),
+  (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+  *,
+  *::before,
+  *::after {
+    background: #fff !important;
+    color: #000 !important;
+    /* Black prints faster */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]::after {
+    content: " (" attr(href) ")";
+  }
+
+  abbr[title]::after {
+    content: " (" attr(title) ")";
+  }
+
+  /*
+   * Don't show links that are fragment identifiers,
+   * or use the `javascript:` pseudo protocol
+   */
+  a[href^="#"]::after,
+  a[href^="javascript:"]::after {
+    content: "";
+  }
+
+  pre {
+    white-space: pre-wrap !important;
+  }
+
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  /*
+   * Printing Tables:
+   * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
+   */
+  thead {
+    display: table-header-group;
+  }
+
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
+

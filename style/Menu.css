@@ -1,0 +1,748 @@
+.container_L1{
+
+    background-color: var(--dark_grey);
+}
+
+/*_______________________________________________________________________________________________
+
+---------------------------MENU--------------------------
+__________________________________________________________________________________________________*/
+
+
+/*------------------------------------------------
+MENU_L
+-------------------------------------------------*/
+
+.menu_L{
+
+    list-style: none;
+    width: 300px;
+    height: 300px;
+    padding-left: 0px;
+    margin-top: 0px;
+    margin-bottom:0px;
+    position:relative;
+
+}
+
+/*=====================ICONES BRANCOS================*/
+
+.Icones_1_L,.Icones_2_L,.Icones_3_L,.Icones_4_L{
+
+    position:absolute;
+
+}
+
+.Icones_1_L{
+
+    width: 60px;
+    top:20px;
+    left:40px;
+
+}
+
+.Icones_2_L{
+
+    width: 50px;
+    top:40px;
+    left:208px;
+
+}
+
+.Icones_3_L{
+
+    width: 45px;
+    top:190px;
+    left:55px;
+
+}
+
+.Icones_4_L{
+
+    width: 50px;
+    top:190px;
+    left:208px;
+
+}
+
+.Icone_white_L{
+
+    position:absolute;
+    top:0%;
+
+}
+
+.Icones_1_L, .Icones_2_L, .Icones_3_L, .Icones_4_L{
+
+    -webkit-transition: all 5s ease;
+    transition: all 5s ease;
+    -webkit-transform: scale(2);
+    transform: scale(2);
+    animation-iteration-count:infinite;
+
+}
+
+/*=======================LINHAS================*/
+
+.vertical_line_B,.vertical_line_G{
+
+    height: 135px;
+    position:absolute;
+    left:50%;
+    box-shadow:  0 0 1em var(--white);
+    animation-duration:10s;
+    animation-iteration-count:infinite;
+
+}
+
+.vertical_line_B{
+
+    border-right: 3px solid var(--blue);
+    animation-name:vertical_line_B;
+
+}
+
+.vertical_line_G{
+
+    border-right: 3px solid var(--green);
+    bottom: 0px;
+    animation-name:vertical_line_G;
+
+}
+
+.horizontal_line_Y,.horizontal_line_O{
+
+    width: 135px;
+    position:absolute;
+    top:50%;
+    box-shadow:  0 0 1em var(--white);
+    animation-duration: 10s;
+    animation-iteration-count:infinite;
+
+}
+
+.horizontal_line_O{
+
+    border: 1px solid var(--orange);
+    right: 0px;
+    animation-name:horizontal_line_O;
+
+}
+
+.horizontal_line_Y{
+
+    border: 1px solid  var(--yellow);
+    animation-name:horizontal_line_Y ;
+
+}
+
+@keyframes horizontal_line_Y {
+
+    0%   {left:0px}
+    25%  {left:15px}
+    50%  {left:15px}
+    75%  {left:15px}
+    100%  {left:0px}
+
+}
+
+
+@keyframes horizontal_line_O {
+
+    0%   {right:0px; }
+    25%  {right:15px; }
+    50%  {right:0px; }
+    75%  {right:15px; }
+    100%  {right:0px; }
+
+}
+
+@keyframes vertical_line_B {
+
+    0%   {top:0px}
+    25%  {top:15px}
+    50%  {top:0px}
+    75%  {top:15px}
+    100%  {top:0px}
+
+}
+
+
+@keyframes vertical_line_G {
+
+    0%   {bottom:0px; }
+    25%  {bottom:15px; }
+    50%  {bottom:0px; }
+    75%  {bottom:15px; }
+    100%  {bottom:0px; }
+
+}
+
+/*======================QUADRADOS================*/
+
+.square_hiden_B, .square_visible_B{
+
+    display:block;
+    height:135px;
+    box-shadow:  0 0 1em var(--white),inset 0 0 2em var(--black);
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background-color: var(--blue);
+
+}
+
+.square_hiden_G, .square_visible_G{
+
+    display: block;   
+    height:135px;
+    box-shadow:  0 0 1em var(--white),inset 0 0 2em var(--black);
+    position: absolute;
+    right: -3px;
+    top: 0px;
+    background-color: var(--green);
+
+}
+
+.square_hiden_O, .square_visible_O{
+
+    display:block;  
+    width: 135px;
+    box-shadow:  0 0 1em var(--white),inset 0 0 2em var(--black);
+    position: absolute;
+    right: 0px;
+    top: -1px;
+    background-color: var(--orange);
+
+}
+
+
+.square_hiden_Y, .square_visible_Y{
+
+    display: block;
+    width: 135px;
+    box-shadow:  0 0 1em var(--white),inset 0 0 2em var(--black);
+    position: absolute;
+    right: -1px;
+    bottom: -1px;
+    background-color: var(--yellow);
+
+}
+
+.square_hiden_B, .square_hiden_G{
+    
+    transition: 1s;
+    opacity: 0;
+    width: 0;
+
+}
+
+.square_visible_B, .square_visible_G{
+
+    transition: 1s;
+    opacity:1;
+    width: 135px;
+
+}
+
+.square_hiden_O, .square_hiden_Y{
+
+    transition: 1s;
+    opacity: 0;
+    height: 0;
+
+}
+
+.square_visible_O, .square_visible_Y{
+
+    transition: 1s;
+    opacity: 1;
+    height:135px;
+
+}
+
+/*_______________________________________________________________________________________________
+
+--------------------------- WELCOME MENU /SEPARADORES  ICONE--------------------------
+__________________________________________________________________________________________________*/
+
+.barra_menu{
+
+    position: relative;
+
+}
+
+/*------------------------------------------------
+        MENU PAGE YELLOW
+-------------------------------------------------*/
+
+.menu_page_hiden_Y, .menu_page_visible_Y{
+
+    display: block;
+    width: 100vw;
+    position: absolute;
+    bottom:0px;
+    background-color:var(--yellow);
+    box-shadow:0 0 1em var(--white);
+
+}
+
+.menu_page_hiden_Y{
+  
+    transition: 5s;
+    opacity: 0;
+    height: 0;
+
+}
+
+.menu_page_visible_Y{
+  
+    transition: 5s;
+    opacity: 1;
+    height:92vh;
+
+}
+
+/*------------------------------------------------
+    TITULO YELLOW
+-------------------------------------------------*/
+
+.t_h1_Y{
+
+    font-size:0.9em;
+    text-transform: uppercase;
+    color: var(--yellow);
+    position: absolute;
+    top:-40px;
+    left:190px;
+
+}
+
+
+/*------------------------------------------------
+    ICON BUTTON YELLOW
+-------------------------------------------------*/
+
+.icon_button_Y1{
+
+    position: absolute;
+    top:-42px;
+    width:110px;
+    transform:rotate(180deg);
+
+}
+
+.icon_button_Y2{
+
+    position: absolute;
+    top:-26px;
+    height:75px;
+    width:75px;
+    margin-left:18px;
+    background-color: var(--dark_grey);
+    border-radius: 100%;
+    box-shadow:0 -0.5em 1em var(--black),inset 0 0 1em var(--grey);
+
+}
+
+.icon_button_Y3{
+
+    position: absolute;
+    top: 9px;
+    left:12px;
+    width:50px;
+
+}
+
+/*------------------------------------------------
+    MENU BUTTON YELLOW
+-------------------------------------------------*/
+
+.menu_button_Y1{
+
+    position: absolute;
+    top:-30px;
+    left:110px;
+    width:80px;
+    transform:rotate(180deg);
+
+}
+
+.menu_button_Y2{
+
+    position: absolute;
+    top: -15px;
+    height: 50px;
+    width: 50px;
+    margin-left:125px;
+    background-color: var(--dark_grey);
+    border-radius: 100%;
+    box-shadow:0 -0.5em 1em var(--black),inset 0 0 1em var(--grey);
+
+}
+
+
+/*------------------------------------------------
+    MENU PAGE ORANGE
+-------------------------------------------------*/
+    
+.menu_page_hiden_O, .menu_page_visible_O{
+
+    display: block;
+    width: 100vw;
+    position: absolute;
+    top: 0px;
+    background-color:var(--orange);
+    box-shadow:0 0 1em var(--white);
+
+}
+
+.menu_page_hiden_O{
+      
+    transition:5s;
+    opacity: 0;
+    height: 0;
+
+}
+
+.menu_page_visible_O{
+  
+    transition: 5s;
+    opacity: 1;
+    height:92vh;
+
+}
+
+/*------------------------------------------------
+    TITULO ORANGE
+-------------------------------------------------*/
+
+.t_h1_O{
+
+    font-size:0.9em;
+    text-transform: uppercase;
+    color: var(--orange);
+    position: absolute;
+    bottom:-40px;
+    left:190px;
+
+}
+
+/*------------------------------------------------
+    ICON BUTTON ORANGE
+-------------------------------------------------*/
+
+.icon_button_O1{
+
+    position: absolute;
+    bottom: -42px;
+    width:110px;
+
+}
+
+.icon_button_O2{
+
+    position: absolute;
+    bottom: -42px;
+    height: 75px;
+    width: 75px;
+    margin-left:16px;
+    margin-bottom: 20px;
+    background-color: var(--dark_grey);
+    border-radius: 100%;
+    box-shadow:0 0.5em 1em var(--black),inset 0 0 1em var(--grey);
+
+}
+
+.icon_button_O3{
+
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    width:55px;
+
+}
+
+/*------------------------------------------------
+    MENU BUTTON ORANGE
+-------------------------------------------------*/
+
+.menu_button_O1{
+
+    position: absolute;
+    bottom:-29px;
+    left:110px;
+    width:80px;
+
+}
+
+.menu_button_O2{
+
+    position: absolute;
+    bottom: -42px;
+    height: 50px;
+    width: 50px;
+    margin-left:123px;
+    margin-bottom: 28px;
+    background-color: var(--dark_grey);
+    border-radius: 100%;
+    box-shadow:0 0.5em 1em var(--black),inset 0 0 1em var(--grey);
+
+}
+
+/*------------------------------------------------
+    BACKGROUND BLUE
+-------------------------------------------------*/
+
+.menu_page_hiden_B, .menu_page_visible_B{
+
+    display: block;
+    height: 100vh;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background-color:var(--blue);
+    box-shadow:0 0 1em var(--white);
+
+}
+
+.menu_page_hiden_B{
+          
+    transition:5s;
+    opacity: 0;
+    width: 0;
+
+}
+
+.menu_page_visible_B{
+  
+    transition:5s;
+    opacity: 1;
+    width:88vw;
+
+}
+
+/*------------------------------------------------
+    TITULO BLUE
+-------------------------------------------------*/
+
+.t_h1_B{
+
+    position: absolute;
+    bottom:310px;
+    right: -40px;
+    font-size:0.9em;
+    text-transform: uppercase;
+    color: var(--blue);
+    transform: rotate(-90deg);
+
+}
+
+/*------------------------------------------------
+    ICON BUTTON BLUE
+-------------------------------------------------*/
+
+.icon_button_B1{
+
+    position:absolute;
+    bottom:25px;
+    right:-55px;
+    width:110px;
+    transform: rotate(-90deg);
+
+}
+
+.icon_button_B2{
+
+    position: absolute;
+    bottom:18px;
+    left:18px;
+    height: 75px;
+    width: 75px;
+    background-color: var(--dark_grey);
+    border-radius: 100%;
+    box-shadow:0 0.5em 1em var(--black),inset 0 0 1em var(--grey);
+
+}
+
+.icon_button_B3{
+
+    position: absolute;
+    bottom:10px;
+    left:10px;
+    width: 60px;
+    transform: rotate(90deg);
+
+}
+
+.icon_button_B4{
+
+    position:absolute;
+    bottom:125px;
+    right:-55px;
+    width:110px;
+    transform: rotate(-90deg);
+
+}
+
+.icon_button_B5{
+
+    position: absolute;
+    bottom:18px;
+    left:18px;
+    height: 75px;
+    width: 75px;
+    background-color: var(--dark_grey);
+    border-radius: 100%;
+    box-shadow:0 0.5em 1em var(--black),inset 0 0 1em var(--grey);
+
+}
+
+.icon_button_B6{
+
+    position: absolute;
+    bottom:15px;
+    left:10px;
+    width: 60px;
+    transform: rotate(90deg);
+
+}
+
+/*------------------------------------------------
+    MENU BUTTON BLUE
+-------------------------------------------------*/
+
+.menu_button_B1{
+
+    position: absolute;
+    bottom:225px;
+    right:-40px;
+    width:80px;
+    transform: rotate(-90deg);
+
+}
+
+.menu_button_B2{
+
+    position: absolute;
+    bottom:15px;
+    right:16px;
+    height: 50px;
+    width: 50px;
+    background-color: var(--dark_grey);
+    border-radius: 100%;
+    box-shadow:0 0.5em 1em var(--black),inset 0 0 1em var(--grey);
+
+}
+
+/*------------------------------------------------
+    MENU PAGE GREEN
+-------------------------------------------------*/
+
+.menu_page_hiden_G, .menu_page_visible_G{
+
+    display: block;
+    height: 100vh;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    background-color:var(--green);
+    box-shadow:0 0 1em var(--white);
+
+}
+
+.menu_page_hiden_G{
+              
+    transition: 5s;
+    opacity: 0;
+    width: 0;
+
+}
+
+.menu_page_visible_G{
+  
+    transition: 5s;
+    opacity: 1;
+    width:88vw;
+
+}
+
+/*------------------------------------------------
+    TITULO GREEN
+-------------------------------------------------*/
+
+.t_h1_G{
+
+    position: absolute;
+    top:210px;
+    left: -50px;
+    font-size:0.9em;
+    text-transform: uppercase;
+    color: var(--green);
+    transform: rotate(90deg);
+
+}
+
+/*------------------------------------------------
+    ICON BUTTON GREEN
+-------------------------------------------------*/
+
+.icon_button_G1{
+
+    position:absolute;
+    top:25px;
+    left:-56px;
+    width:110px;
+    transform: rotate(90deg);
+
+}
+
+.icon_button_G2{
+
+    position: absolute;
+    top:-5px;
+    left:17px;
+    height: 75px;
+    width: 75px;
+    background-color: var(--dark_grey);
+    border-radius: 100%;
+    box-shadow: 0 0.5em 1em var(--black),inset 0 0 1em var(--grey);
+
+}
+
+.icon_button_G3{
+
+    position: absolute;
+    top:15px;
+    right:15px;
+    width:50px;
+    transform: rotate(-90deg);
+
+}
+
+/*------------------------------------------------
+    MENU BUTTON GREEN
+-------------------------------------------------*/
+
+.menu_button_G1{
+
+    position: absolute;
+    top:125px;
+    left:-42px;
+    width:80px;
+    transform: rotate(90deg);
+
+}
+
+.menu_button_G2{
+
+    position: absolute;
+    bottom:10px;
+    right:14px;
+    height: 50px;
+    width: 50px;
+    background-color: var(--dark_grey);
+    border-radius: 100%;
+    box-shadow:0 0.5em 1em var(--black),inset 0 0 1em var(--grey);
+
+}
